@@ -286,6 +286,17 @@ class List
 
         return to;
     }
+	//Iterates through every node in the list
+    void visitAll()
+    {
+		Node *temp = new Node;
+		temp = this->head;
+		while(temp->next != nullptr)
+		{
+			//Do smt
+			temp = temp->next;
+		}
+    }
 
   private:
     int   theSize;

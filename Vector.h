@@ -117,6 +117,14 @@ class Vector
         --theSize;
     }
 
+    void visitAll()
+    {
+		for(int i = 0; i < theSize; i++)
+		{
+			;
+		}
+    }
+
     const Object & back ( ) const
     {
         if( empty( ) )
