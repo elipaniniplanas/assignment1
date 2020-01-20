@@ -3,7 +3,7 @@ all: main
 
 #run the application "main"
 run: main
-	@echo "Running "
+	@echo "Running... "
 	./main
 
 #link main.o and student.o to executable "main"
