@@ -293,7 +293,6 @@ class List
 		temp = this->head;
 		while(temp->next != nullptr)
 		{
-			//Do smt
 			temp = temp->next;
 		}
     }

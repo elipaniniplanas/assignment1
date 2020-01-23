@@ -121,7 +121,8 @@ class Vector
     {
 		for(int i = 0; i < theSize; i++)
 		{
-			;
+			objects[i];
+			//vector[i]
 		}
     }
 
