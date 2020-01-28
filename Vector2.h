@@ -135,6 +135,7 @@ class Vector
 			objects[ i ] = objects[ i - 1 ];
 		}
 		objects[ 0 ] = std::move( x );
+    theSize++;
         
 	}
   void push_front( const Object & x )
@@ -146,7 +147,7 @@ class Vector
 			objects[ i ] = objects[ i - 1 ];
 		}
 		objects[ 0 ] = x;
-        
+    theSize++;
 	}
 
 

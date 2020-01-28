@@ -119,11 +119,12 @@ class Vector
 
     void visitAll()
     {
-		for(int i = 0; i < theSize; i++)
-		{
-			std::cout << "\0";
-			objects[i]++;
-		}
+      Object temp;
+		  for(int i = 0; i < theSize; i++)
+		  {
+		    // swap(objects[i], temp);
+			  // objects[i];
+		  }	
     }
 
     const Object & back ( ) const

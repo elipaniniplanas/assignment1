@@ -292,19 +292,11 @@ class List
     {
 		Node *temp = new Node;
 		temp = this->head;
-		// temp = temp->next;
-		// while(temp->next != nullptr)
-		// {
-    //   		std::cout << "\0";
-		// 	temp = temp->next;
-		// }
     do
     {
-      std::cout << "\0";
 		  temp = temp->next;
-    } while(temp->next!= nullptr);
+    } while(temp->next!= tail);
     }
-
   private:
     int   theSize;
     Node *head;
