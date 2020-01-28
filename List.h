@@ -2,6 +2,7 @@
 #define LIST_H
 
 #include <algorithm>
+#include <iostream>
 using namespace std;
 
 template <typename Object>
@@ -291,8 +292,10 @@ class List
     {
 		Node *temp = new Node;
 		temp = this->head;
+		temp
 		while(temp->next != nullptr)
 		{
+      		std::cout << "\0";
 			temp = temp->next;
 		}
     }

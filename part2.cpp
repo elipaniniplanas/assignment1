@@ -1,11 +1,11 @@
 #include <time.h> 
 #include <iostream>
 #include "List.h"
-#include "Vector.h"
+#include "Vector2.h"
 
 using namespace std;
 
-const int elements = 10;
+const int elements = 1000000;
 
 double elapsed_time( clock_t start, clock_t finish){
    // returns elapsed time in milliseconds
@@ -30,7 +30,7 @@ int main (int argc, char * const argv[]) {
    Vector<int> myVector;
 	for(int i=0; i<elements; i++)
    {
-	   myVector.push_back(1);
+	   myVector.push_front(1);
    }
    myVector.visitAll();
    finish = clock();
