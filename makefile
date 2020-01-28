@@ -1,24 +1,20 @@
 #compile and link the application
-all: main
+all: part1
 
 #run the application "main"
-run: main
+run: part1
 	@echo "Running... "
-	./main
+	./part1
 
 #link main.o and student.o to executable "main"
-main: main.o student.o
-	g++ -o main main.o student.o
+part1: part1.o
+	g++ -o part1 part1.o
 
 #compile the main.cpp to main.o
-main.o: main.cpp
-	g++ -c main.cpp
-
-#compile the student.cpp to student.o
-student.o: student.cpp
-	g++  -c student.cpp
+part1.o: part1.cpp
+	g++ -c part1.cpp
 
 #remove built files
 clean:
 	@echo "Cleaning up..."
-	rm -rf main main.o student.o *~
+	rm -rf part1 part1.o *~

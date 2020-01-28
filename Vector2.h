@@ -1,5 +1,5 @@
-#ifndef VECTOR_H
-#define VECTOR_H
+#ifndef VECTOR2_H
+#define VECTOR2_H
 
 #include <algorithm>
 #include <iostream>
@@ -121,10 +121,34 @@ class Vector
     {
 		for(int i = 0; i < theSize; i++)
 		{
-			std::cout << "\0";
-			objects[i]++;
+			objects[i];
+			//vector[i]
 		}
     }
+
+	void push_front( Object && x )
+	{
+		if( theSize == theCapacity )
+            reserve( 2 * theCapacity + 1 );
+		for (int i = theSize; i >= 1; i--)
+		{
+			objects[ i ] = objects[ i - 1 ];
+		}
+		objects[ 0 ] = std::move( x );
+        
+	}
+  void push_front( const Object & x )
+	{
+		if( theSize == theCapacity )
+            reserve( 2 * theCapacity + 1 );
+		for (int i = theSize; i >= 1; i--)
+		{
+			objects[ i ] = objects[ i - 1 ];
+		}
+		objects[ 0 ] = x;
+        
+	}
+
 
     const Object & back ( ) const
     {
