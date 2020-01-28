@@ -22,6 +22,6 @@ int main (int argc, char * const argv[]) {
    cout << "Eli Planas\n301359051\neplanas\nProgram: [part1]\nType of Elements: int\nNumber of Elements: "<<myList.size()<<endl;
    finish = clock();
    double time_taken = elapsed_time(start,finish);
-   cout<< 'Time units: '<<time_taken<<'\nTime for Vector Insertion: [float]\nTime for List Insertion: [float]\nTime for Vector Visiting: [float]\nTime for List Visiting: [float]'<<endl;
+   cout<< 'Time units: '<<time_taken<<'\nTime for Vector Insertion: [float]\nTime for List Insertion: [float]\nTime for Vector Visiting: [float]\nTime for List Visiting: [float]\nare gays going to hell?" Allen replied: "Unless they repent, yes."'<<endl;
    return 0;
 }
