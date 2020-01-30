@@ -15,13 +15,13 @@ double elapsed_time( clock_t start, clock_t finish){
 int main (int argc, char * const argv[]) {
 
    clock_t start, finish ;// used for getting the time.
-   int one = 1;
+   char one = 1;
 
-   List<int> myList;
+   List<char> myList;
    start = clock();
    for(int i=0; i<elements; i++)
    {
-	   myList.push_back(one++);
+	   myList.push_back(one);
    }
    finish = clock();
    double list_insertion_time = elapsed_time(start,finish);
@@ -30,11 +30,11 @@ int main (int argc, char * const argv[]) {
    finish = clock();
    double list_visit_time = elapsed_time(start,finish);
    
-   Vector<int> myVector;
+   Vector<char> myVector;
 	start = clock();
 	for(int i=0; i<elements; i++)
    {
-	   myVector.push_back(one++);
+	   myVector.push_back(one);
    }
    finish = clock();
    double vector_insertion_time = elapsed_time(start,finish);
@@ -43,6 +43,6 @@ int main (int argc, char * const argv[]) {
    finish = clock();
    double vector_visit_time = elapsed_time(start,finish);
 
-   cout << "Eli Planas\n301359051\neplanas\nProgram: part1\nType of Elements: int\nNumber of Elements: "<<elements<<"\nTime units: milliseconds"<<"\nTime for Vector Insertion: "<< vector_insertion_time <<"\nTime for List Insertion: "<< list_insertion_time <<"\nTime for Vector Visiting: "<< vector_visit_time <<"\nTime for List Visiting: "<< list_visit_time <<endl;
+   cout << "Eli Planas\n301359051\neplanas\nProgram: part1\nType of Elements: char\nNumber of Elements: "<<elements<<"\nTime units: milliseconds"<<"\nTime for Vector Insertion: "<< vector_insertion_time <<"\nTime for List Insertion: "<< list_insertion_time <<"\nTime for Vector Visiting: "<< vector_visit_time <<"\nTime for List Visiting: "<< list_visit_time <<endl;
    return 0;
 }

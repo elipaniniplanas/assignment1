@@ -1,9 +1,7 @@
 #compile, link, and run the application
 all: part1 part2
-	@echo "Running part1.cpp... "
 	./part1
 	@echo " "
-	@echo "Running part2.cpp... "
 	./part2
 
 #link part1.o to executable "part1"

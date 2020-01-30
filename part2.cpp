@@ -21,7 +21,7 @@ int main (int argc, char * const argv[]) {
    start = clock();
    for(int i=0; i<elements; i++)
    {
-	   myList.push_front(one++);
+	   myList.push_front(one);
    }
    finish = clock();
    double list_insertion_time = elapsed_time(start,finish);
@@ -34,7 +34,7 @@ int main (int argc, char * const argv[]) {
 	start = clock();
 	for(int i=0; i<elements; i++)
    {
-	   myVector.push_front(one++);
+	   myVector.push_front(one);
    }
    finish = clock();
    double vector_insertion_time = elapsed_time(start,finish);
