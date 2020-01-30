@@ -119,11 +119,13 @@ class Vector
 
     void visitAll()
     {
-		for(int i = 0; i < theSize; i++)
-		{
-			objects[i];
-			//vector[i]
-		}
+		  Object temp;
+		  for(int i = 0; i < theSize; i++)
+		  {
+		    objects[i];
+        swap(objects[i], temp);
+			  
+		  }
     }
 
 	void push_front( Object && x )
