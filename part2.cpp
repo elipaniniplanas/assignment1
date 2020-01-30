@@ -5,7 +5,7 @@
 
 using namespace std;
 
-const int elements = 10;
+const int elements = 100;
 
 double elapsed_time( clock_t start, clock_t finish){
    // returns elapsed time in milliseconds
@@ -15,9 +15,9 @@ double elapsed_time( clock_t start, clock_t finish){
 int main (int argc, char * const argv[]) {
 
    clock_t start, finish ;// used for getting the time.
-   int one = 1;
+   string one = "poop";
 
-   List<int> myList;
+   List<string> myList;
    start = clock();
    for(int i=0; i<elements; i++)
    {
@@ -30,7 +30,7 @@ int main (int argc, char * const argv[]) {
    finish = clock();
    double list_visit_time = elapsed_time(start,finish);
    
-   Vector<int> myVector;
+   Vector<string> myVector;
 	start = clock();
 	for(int i=0; i<elements; i++)
    {
@@ -43,6 +43,6 @@ int main (int argc, char * const argv[]) {
    finish = clock();
    double vector_visit_time = elapsed_time(start,finish);
 
-   cout << "Eli Planas\n301359051\neplanas\nProgram: part2\nType of Elements: int\nNumber of Elements: "<<elements<<"\nTime units: milliseconds"<<"\nTime for Vector Insertion: "<< vector_insertion_time <<"\nTime for List Insertion: "<< list_insertion_time <<"\nTime for Vector Visiting: "<< vector_visit_time <<"\nTime for List Visiting: "<< list_visit_time <<endl;
+   cout << "Eli Planas\n301359051\neplanas\nProgram: part2\nType of Elements: string\nNumber of Elements: "<<elements<<"\nTime units: milliseconds"<<"\nTime for Vector Insertion: "<< vector_insertion_time <<"\nTime for List Insertion: "<< list_insertion_time <<"\nTime for Vector Visiting: "<< vector_visit_time <<"\nTime for List Visiting: "<< list_visit_time <<endl;
    return 0;
 }
