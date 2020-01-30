@@ -122,8 +122,9 @@ class Vector
       Object temp;
 		  for(int i = 0; i < theSize; i++)
 		  {
-		    // swap(objects[i], temp);
-			  // objects[i];
+		    objects[i];
+        swap(objects[i], temp);
+			  
 		  }	
     }
 

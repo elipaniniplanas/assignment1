@@ -15,12 +15,13 @@ double elapsed_time( clock_t start, clock_t finish){
 int main (int argc, char * const argv[]) {
 
    clock_t start, finish ;// used for getting the time.
+   int one = 1;
 
    List<int> myList;
    start = clock();
    for(int i=0; i<elements; i++)
    {
-	   myList.push_back(1);
+	   myList.push_back(one++);
    }
    finish = clock();
    double list_insertion_time = elapsed_time(start,finish);
@@ -33,7 +34,7 @@ int main (int argc, char * const argv[]) {
 	start = clock();
 	for(int i=0; i<elements; i++)
    {
-	   myVector.push_back(1);
+	   myVector.push_back(one++);
    }
    finish = clock();
    double vector_insertion_time = elapsed_time(start,finish);
