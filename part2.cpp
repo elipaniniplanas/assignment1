@@ -5,7 +5,7 @@
 
 using namespace std;
 
-const int elements = 1000;
+const int elements = 10;
 
 double elapsed_time( clock_t start, clock_t finish){
    // returns elapsed time in milliseconds
